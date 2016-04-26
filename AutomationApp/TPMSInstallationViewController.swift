@@ -12,8 +12,54 @@ class TPMSInstallationViewController: UIViewController {
 
     @IBOutlet weak var view1: dragView1!
     
-    @IBAction func CHECKALLSENSOREBUTTONPRESSED(sender: AnyObject) {
+    @IBAction func CHECKALLSENSOREBUTTONPRESSED(sender: AnyObject)
+    {
+        let finishPoint = CGPointMake(600,  view.center.y)
+        
+        
+        
+        UIView.animateWithDuration(0.3,
+                                   animations: {
+                                    self.view1.center = finishPoint
+                                    self.view1.transform = CGAffineTransformMakeRotation(1)
+            }, completion: nil /*{
+             */)
+
     }
+    
+    
+    @IBOutlet weak var view2: dragView1!
+    
+    @IBAction func button2Pressed(sender: AnyObject)
+    {
+         let finishPoint = CGPointMake(600,  view.center.y)
+        UIView.animateWithDuration(0.3,
+                                   animations: {
+                                    self.view2.center = finishPoint
+                                    self.view2.transform = CGAffineTransformMakeRotation(1)
+            }, completion: nil /*{
+             */)
+
+    }
+    
+    @IBOutlet weak var view3: dragView1!
+    
+    
+    @IBAction func button3Pressed(sender: AnyObject)
+    {
+        
+        let finishPoint = CGPointMake(600,  view.center.y)
+        UIView.animateWithDuration(0.3,
+                                   animations: {
+                                    self.view3.center = finishPoint
+                                    self.view3.transform = CGAffineTransformMakeRotation(1)
+            }, completion: nil /*{
+             */)
+        
+        
+
+    }
+    
     override func viewDidLoad()
     
     {

@@ -44,18 +44,18 @@ class DashBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
         self.revealViewController().rearViewRevealWidth = 250
         
         
-        scrollView.contentSize = CGSize(width:320, height: 750)
-        
-//        scrollView.addSubview(containerView)
-//         scrollView.addSubview(tpmsView)
-//         scrollView.addSubview(welcomeUserView)
-        
-        
+        scrollView.contentSize = CGSize(width:320, height: 600)
 
-        //self.containerView.frame = CGRect(x: 8, y: 194, width: 409, height: 43)
-                
-        
         util.roundImage(profilePicImageView)
+        
+        
+        UIView.animateWithDuration(0.0,
+                                   animations:
+            {
+                self.containerView.frame = CGRect(x: 10, y: 150, width: 409, height: 43)
+                
+
+        })
     }
     
     func buttonTwoPressed()
@@ -152,24 +152,13 @@ class DashBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
         UIView.animateWithDuration(0.3,
                                    animations:
                                     {
-                                        self.containerView.frame = CGRect(x: 8, y: 194, width: 409, height: 43)
+                                    self.containerView.frame = CGRect(x: 8, y: 0, width: 409, height: 43)
 
                                     self.containerView.alpha = 1
                                     self.tpmsView.hidden = true
                                        
                                     })
-        
-       // self.tpmsView.removeFromSuperview()
-                                    
-    
-        
-//        UIView.animateWithDuration(0.3, animations: {
-//            
-//            self.hotDealLabel.frame = CGRect(x: 0, y: 400, width: 409, height: 21)
-//            self.hotDealCarCollectionView.frame = CGRect(x: 0, y: 423, width: 405, height: 112)
-//            
-//            
-//        })
+
 
     }
     

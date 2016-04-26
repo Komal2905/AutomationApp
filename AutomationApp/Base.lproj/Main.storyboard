@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h88-JU-baC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tDZ-yF-wJW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="IEy-mp-TQw"/>
+                        <viewControllerLayoutGuide type="bottom" id="1WU-cw-ubn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -61,8 +61,8 @@
             <objects>
                 <viewController id="QjE-np-Tuy" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kaI-9s-e3a"/>
-                        <viewControllerLayoutGuide type="bottom" id="X49-Hd-Z5D"/>
+                        <viewControllerLayoutGuide type="top" id="y5W-Mf-o12"/>
+                        <viewControllerLayoutGuide type="bottom" id="K5v-Bk-nR0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OC0-iv-wq1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -86,8 +86,8 @@
             <objects>
                 <viewController id="7go-Te-5xd" customClass="WelcomeViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EFc-ue-PMa"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jvn-UW-QFo"/>
+                        <viewControllerLayoutGuide type="top" id="FBV-7n-PWw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZNp-T3-VDA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UHe-u2-lZb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -122,20 +122,20 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="WJV-x4-zh1" kind="show" identifier="welcome" id="8SL-cn-vIc"/>
+                        <segue destination="WJV-x4-zh1" kind="presentation" identifier="welcome" id="8SL-cn-vIc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vff-zY-bmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="1606"/>
+            <point key="canvasLocation" x="68" y="1605.9999999999998"/>
         </scene>
         <!--Walk Thru View Controller-->
         <scene sceneID="Hno-g5-370">
             <objects>
                 <viewController id="WJV-x4-zh1" customClass="WalkThruViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vju-gu-qwb"/>
-                        <viewControllerLayoutGuide type="bottom" id="FL5-4y-yaH"/>
+                        <viewControllerLayoutGuide type="top" id="F12-mp-0Lb"/>
+                        <viewControllerLayoutGuide type="bottom" id="DSt-rD-xMV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KEI-FR-Iub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -163,7 +163,7 @@
                                     <color key="titleColor" red="0.52550080127692311" green="0.032527164376103077" blue="0.058311180803412764" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WTE-Xf-ggf"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WTE-Xf-ggf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,8 +187,8 @@
             <objects>
                 <viewController storyboardIdentifier="WalkThru3ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6no-CC-x08" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="thX-vy-nAC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ej7-mJ-rbX"/>
+                        <viewControllerLayoutGuide type="top" id="edz-az-1Lk"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Oc-B8-gwG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tV8-3A-37c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -243,20 +243,141 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgR-lI-G31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="2314"/>
+            <point key="canvasLocation" x="1205" y="2313.9999999999995"/>
         </scene>
         <!--Dash Board View Controller-->
         <scene sceneID="08g-DR-sPe">
             <objects>
                 <viewController id="43H-gM-ViF" customClass="DashBoardViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S6f-7D-pop"/>
-                        <viewControllerLayoutGuide type="bottom" id="9IK-gU-boO"/>
+                        <viewControllerLayoutGuide type="top" id="NKA-yB-FDA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0tB-Cn-nNg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iio-zm-u6F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sn-xd-e8C">
+                                <rect key="frame" x="0.0" y="40" width="320" height="186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome , User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-Ny-ODx">
+                                        <rect key="frame" x="120" y="34" width="173" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU0-3O-M1W">
+                                        <rect key="frame" x="120" y="57" width="135" height="23"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
+                                        <state key="normal" title="Click here for assistance">
+                                            <color key="titleColor" red="0.51108826848949906" green="0.48592252459596602" blue="0.52736378205128198" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-pk-jok">
+                                        <rect key="frame" x="8" y="96" width="304" height="68"/>
+                                        <color key="backgroundColor" red="0.96832932689999995" green="0.96832932689999995" blue="0.96832932689999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Rzb-be-35W">
+                                            <size key="itemSize" width="129" height="63"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell" id="Dyd-YY-kZl" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="3" width="83" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNj-aX-OxG">
+                                                            <rect key="frame" x="4" y="26" width="61" height="26"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="788" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cql-Xa-41M">
+                                                            <rect key="frame" x="29" y="8" width="34" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <size key="customSize" width="83" height="63"/>
+                                                <connections>
+                                                    <outlet property="numberLable" destination="cql-Xa-41M" id="y9v-1R-Fms"/>
+                                                    <outlet property="textLabel" destination="NNj-aX-OxG" id="2ju-iO-B9Z"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell2" id="Mra-DR-nj1" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="3" width="112" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driving Score" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7E-C9-6Cx">
+                                                            <rect key="frame" x="4" y="26" width="113" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="87 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uub-FB-d93">
+                                                            <rect key="frame" x="41" y="8" width="38" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <size key="customSize" width="112" height="63"/>
+                                                <connections>
+                                                    <outlet property="numberLable" destination="uub-FB-d93" id="crD-lF-7TD"/>
+                                                    <outlet property="textLabel" destination="N7E-C9-6Cx" id="xnB-6s-IHG"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell3" id="6rG-lB-zeE" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="3" width="92" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="63"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-r1-cAh">
+                                                            <rect key="frame" x="21" y="8" width="34" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area of Imporvment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-kh-Xdi">
+                                                            <rect key="frame" x="4" y="26" width="84" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <size key="customSize" width="92" height="63"/>
+                                                <connections>
+                                                    <outlet property="numberLable" destination="SgD-r1-cAh" id="6EC-dr-E4s"/>
+                                                    <outlet property="textLabel" destination="WWf-kh-Xdi" id="UAn-4D-bgr"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="43H-gM-ViF" id="pqp-cB-Lbe"/>
+                                            <outlet property="delegate" destination="43H-gM-ViF" id="dGJ-TL-jY4"/>
+                                        </connections>
+                                    </collectionView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="eM1-WG-iay">
+                                        <rect key="frame" x="24" y="34" width="65" height="54"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnO-T0-OE6">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <color key="barTintColor" red="1" green="0.35013736919999999" blue="0.028686031670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,131 +389,17 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Afl-Og-pNJ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="214" width="320" height="354"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sn-xd-e8C">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="eM1-WG-iay">
-                                                <rect key="frame" x="24" y="23" width="65" height="65"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome , User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1c-Ny-ODx">
-                                                <rect key="frame" x="120" y="34" width="173" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU0-3O-M1W">
-                                                <rect key="frame" x="120" y="57" width="135" height="23"/>
-                                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="12"/>
-                                                <state key="normal" title="Click here for assistance">
-                                                    <color key="titleColor" red="0.51108826848949906" green="0.48592252459596602" blue="0.52736378205128198" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-pk-jok">
-                                                <rect key="frame" x="8" y="96" width="304" height="68"/>
-                                                <color key="backgroundColor" red="0.96832932689999995" green="0.96832932689999995" blue="0.96832932689999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Rzb-be-35W">
-                                                    <size key="itemSize" width="129" height="63"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell" id="Dyd-YY-kZl" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="3" width="83" height="63"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="63"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNj-aX-OxG">
-                                                                    <rect key="frame" x="4" y="26" width="61" height="26"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="788" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cql-Xa-41M">
-                                                                    <rect key="frame" x="29" y="8" width="34" height="21"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </view>
-                                                        <size key="customSize" width="83" height="63"/>
-                                                        <connections>
-                                                            <outlet property="numberLable" destination="cql-Xa-41M" id="y9v-1R-Fms"/>
-                                                            <outlet property="textLabel" destination="NNj-aX-OxG" id="2ju-iO-B9Z"/>
-                                                        </connections>
-                                                    </collectionViewCell>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell2" id="Mra-DR-nj1" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
-                                                        <rect key="frame" x="83" y="3" width="112" height="63"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="112" height="63"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driving Score" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7E-C9-6Cx">
-                                                                    <rect key="frame" x="4" y="26" width="113" height="37"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="87 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uub-FB-d93">
-                                                                    <rect key="frame" x="41" y="8" width="38" height="21"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </view>
-                                                        <size key="customSize" width="112" height="63"/>
-                                                        <connections>
-                                                            <outlet property="numberLable" destination="uub-FB-d93" id="crD-lF-7TD"/>
-                                                            <outlet property="textLabel" destination="N7E-C9-6Cx" id="xnB-6s-IHG"/>
-                                                        </connections>
-                                                    </collectionViewCell>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell3" id="6rG-lB-zeE" customClass="DashBoardCollectionViewCell" customModule="AutomationApp" customModuleProvider="target">
-                                                        <rect key="frame" x="195" y="3" width="92" height="63"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="92" height="63"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-r1-cAh">
-                                                                    <rect key="frame" x="21" y="8" width="34" height="21"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="0.5110882685" green="0.48592252460000002" blue="0.52736378210000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area of Imporvment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-kh-Xdi">
-                                                                    <rect key="frame" x="4" y="26" width="84" height="37"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <color key="highlightedColor" red="0.52550080129999999" green="0.032527164380000001" blue="0.058311180800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        </view>
-                                                        <size key="customSize" width="92" height="63"/>
-                                                        <connections>
-                                                            <outlet property="numberLable" destination="SgD-r1-cAh" id="6EC-dr-E4s"/>
-                                                            <outlet property="textLabel" destination="WWf-kh-Xdi" id="UAn-4D-bgr"/>
-                                                        </connections>
-                                                    </collectionViewCell>
-                                                </cells>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="43H-gM-ViF" id="pqp-cB-Lbe"/>
-                                                    <outlet property="delegate" destination="43H-gM-ViF" id="dGJ-TL-jY4"/>
-                                                </connections>
-                                            </collectionView>
-                                        </subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCY-I2-K2K">
+                                        <rect key="frame" x="8" y="8" width="304" height="441"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                        <connections>
+                                            <segue destination="Tnx-RK-gX2" kind="embed" id="hCX-vf-4lL"/>
+                                        </connections>
+                                    </containerView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyg-hq-Qej">
-                                        <rect key="frame" x="8" y="194" width="304" height="151"/>
+                                        <rect key="frame" x="8" y="13" width="304" height="151"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct9-PD-vXh">
                                                 <rect key="frame" x="279" y="3" width="20" height="20"/>
@@ -424,7 +431,7 @@
                                                     <color key="titleColor" red="0.98464214809999995" green="0.96225160629999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="h88-JU-baC" kind="show" id="v7I-ni-714"/>
+                                                    <segue destination="h88-JU-baC" kind="presentation" id="v7I-ni-714"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ6-vd-s0A">
@@ -437,13 +444,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCY-I2-K2K">
-                                        <rect key="frame" x="8" y="344" width="304" height="405"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Tnx-RK-gX2" kind="embed" id="hCX-vf-4lL"/>
-                                        </connections>
-                                    </containerView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -468,35 +468,145 @@
             <objects>
                 <viewController id="h88-JU-baC" customClass="TPMSInstallationViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dGX-pk-wnH"/>
-                        <viewControllerLayoutGuide type="bottom" id="HQw-qc-yVX"/>
+                        <viewControllerLayoutGuide type="top" id="S1l-Qb-drh"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrO-Xn-sxP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5aM-dS-Xso">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3LO-MD-xli" customClass="dragView1" customModule="AutomationApp" customModuleProvider="target">
-                                <rect key="frame" x="35" y="54" width="257" height="416"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydG-4N-egm" customClass="dragView1" customModule="AutomationApp" customModuleProvider="target">
+                                <rect key="frame" x="31" y="36" width="257" height="416"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TPMS installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21z-qW-itP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TPMS installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-zR-U0z">
                                         <rect key="frame" x="-7" y="18" width="272" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lets do a one time setup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5S-jf-xf1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front Right Sensore Installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYr-zn-Z3Q">
                                         <rect key="frame" x="-7" y="42" width="272" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-V9-oZf">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-HU-Zwf">
                                         <rect key="frame" x="84" y="71" width="165" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">You will now install four sensors in yur car tyres. Click a TV icon to watch video and then below  select which sensor are you going to colabrate with</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVh-Yy-rGv">
+                                        <rect key="frame" x="14" y="350" width="222" height="30"/>
+                                        <color key="backgroundColor" red="0.98772948029999996" green="0.37650962249999997" blue="0.063647216509999993" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="&lt;&lt; BACK TO SENSOR">
+                                            <color key="titleColor" red="0.98464214809999995" green="0.96225160629999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CHECKALLSENSOREBUTTONPRESSED:" destination="h88-JU-baC" eventType="touchUpInside" id="h1G-UX-yjs"/>
+                                            <action selector="button2Pressed:" destination="h88-JU-baC" eventType="touchUpInside" id="5wp-kW-1uW"/>
+                                            <action selector="button3Pressed:" destination="h88-JU-baC" eventType="touchUpInside" id="tLR-hI-3z8"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Showing Video Frames-52-2" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-cb-als">
+                                        <rect key="frame" x="8" y="97" width="60" height="60"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-RV-gMA">
+                                        <rect key="frame" x="25" y="185" width="198" height="121"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carTyreInstall" translatesAutoresizingMaskIntoConstraints="NO" id="yTK-2e-6EQ">
+                                                <rect key="frame" x="33" y="48" width="135" height="65"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHECKING SENSOR INSTALLATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sez-kr-50A">
+                                                <rect key="frame" x="52" y="7" width="114" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ok-48" translatesAutoresizingMaskIntoConstraints="NO" id="M09-qg-nRz">
+                                                <rect key="frame" x="19" y="11" width="25" height="25"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mG-Av-GIF" customClass="dragView1" customModule="AutomationApp" customModuleProvider="target">
+                                <rect key="frame" x="31" y="56" width="257" height="416"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TPMS installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkU-9l-dY7">
+                                        <rect key="frame" x="-7" y="18" width="272" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front Right Sensore Installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Su-Vj-EJM">
+                                        <rect key="frame" x="-7" y="42" width="272" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="13T-Tx-f9L">
+                                        <rect key="frame" x="84" y="71" width="165" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">You will now install four sensors in yur car tyres. Click a TV icon to watch video and then below  select which sensor are you going to colabrate with</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSl-kZ-FBk">
+                                        <rect key="frame" x="14" y="350" width="222" height="30"/>
+                                        <color key="backgroundColor" red="0.98772948029999996" green="0.37650962249999997" blue="0.063647216509999993" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="INSTALL AND CLICK HERE">
+                                            <color key="titleColor" red="0.98464214809999995" green="0.96225160629999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CHECKALLSENSOREBUTTONPRESSED:" destination="h88-JU-baC" eventType="touchUpInside" id="LvL-oq-5ib"/>
+                                            <action selector="button2Pressed:" destination="h88-JU-baC" eventType="touchUpInside" id="ZPj-MT-H6K"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Showing Video Frames-52-2" translatesAutoresizingMaskIntoConstraints="NO" id="Y6c-nj-tYd">
+                                        <rect key="frame" x="8" y="97" width="60" height="60"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55S-1j-xBu">
+                                        <rect key="frame" x="25" y="185" width="198" height="121"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carTyreInstall" translatesAutoresizingMaskIntoConstraints="NO" id="tzG-Ts-uIB">
+                                                <rect key="frame" x="33" y="48" width="135" height="65"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHECKING SENSOR INSTALLATION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="059-m3-yFt">
+                                                <rect key="frame" x="52" y="7" width="114" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Recurring Appointment-48" translatesAutoresizingMaskIntoConstraints="NO" id="xGO-XX-piD">
+                                                <rect key="frame" x="19" y="11" width="25" height="25"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3LO-MD-xli" customClass="dragView1" customModule="AutomationApp" customModuleProvider="target">
+                                <rect key="frame" x="31" y="76" width="257" height="416"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TPMS installation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21z-qW-itP">
+                                        <rect key="frame" x="-7" y="18" width="272" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lets do a one time setup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5S-jf-xf1">
+                                        <rect key="frame" x="-7" y="42" width="272" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.18102964743589733" green="0.18102964743589733" blue="0.18102964743589733" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car Structure" translatesAutoresizingMaskIntoConstraints="NO" id="eza-jW-pa2">
                                         <rect key="frame" x="8" y="191" width="240" height="128"/>
                                     </imageView>
@@ -514,6 +624,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Showing Video Frames-52-2" translatesAutoresizingMaskIntoConstraints="NO" id="Rw6-ff-2G5">
                                         <rect key="frame" x="8" y="97" width="60" height="60"/>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-V9-oZf">
+                                        <rect key="frame" x="84" y="77" width="165" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">You will now install four sensors in yur car tyres. Click a TV icon to watch video and then below  select which sensor are you going to colabrate with</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -523,11 +640,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="view1" destination="3LO-MD-xli" id="uY9-Ce-FZb"/>
+                        <outlet property="view2" destination="4mG-Av-GIF" id="2on-0w-T6R"/>
+                        <outlet property="view3" destination="ydG-4N-egm" id="sBK-DL-vf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxj-g0-dBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2576" y="999"/>
+            <point key="canvasLocation" x="2741.25" y="1551.7605633802816"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="O1O-hw-ike">
@@ -544,8 +663,8 @@
             <objects>
                 <viewController storyboardIdentifier="readMoreCommnetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cqS-rj-A8b" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9dE-uG-lmo"/>
-                        <viewControllerLayoutGuide type="bottom" id="dCr-jY-Cav"/>
+                        <viewControllerLayoutGuide type="top" id="9d6-a4-wTH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aqt-LU-RKR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5LK-vU-Pl0">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
@@ -566,15 +685,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oe2-Zs-uhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1299" y="2602"/>
+            <point key="canvasLocation" x="-1299" y="2601.9999999999995"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xic-ET-NeF">
             <objects>
                 <viewController storyboardIdentifier="WalkThru1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gqk-XW-wvl" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LBk-7f-gH9"/>
-                        <viewControllerLayoutGuide type="bottom" id="9SX-Jp-13W"/>
+                        <viewControllerLayoutGuide type="top" id="pFd-3b-jnj"/>
+                        <viewControllerLayoutGuide type="bottom" id="iH6-2Z-W6O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gWh-4k-03i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -636,15 +755,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fev-fm-kZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="2314"/>
+            <point key="canvasLocation" x="458" y="2313.9999999999995"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="oj1-jz-mrM">
             <objects>
                 <viewController id="qjn-C2-H3r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="47f-b9-WUS"/>
-                        <viewControllerLayoutGuide type="bottom" id="tQM-65-7Gt"/>
+                        <viewControllerLayoutGuide type="top" id="wAX-W7-rlf"/>
+                        <viewControllerLayoutGuide type="bottom" id="aCq-5v-H6y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gTt-ek-gRm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -666,8 +785,8 @@
             <objects>
                 <viewController id="hQd-nk-Lsi" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zma-Sa-zAD"/>
-                        <viewControllerLayoutGuide type="bottom" id="dVH-vq-1d2"/>
+                        <viewControllerLayoutGuide type="top" id="RN8-gK-nUc"/>
+                        <viewControllerLayoutGuide type="bottom" id="mzO-IJ-9Co"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AMM-oV-8Eu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -711,7 +830,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8Y-n3-4EP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="3815"/>
+            <point key="canvasLocation" x="78" y="3814.9999999999995"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="j1V-Es-3ZH">
@@ -897,15 +1016,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV1-uh-l2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="1941"/>
+            <point key="canvasLocation" x="1944" y="1940.9999999999998"/>
         </scene>
         <!--Trip Analysis View Controller-->
         <scene sceneID="r1y-j5-ceF">
             <objects>
                 <viewController id="XTa-TC-sul" customClass="TripAnalysisViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ocX-3w-bF2"/>
-                        <viewControllerLayoutGuide type="bottom" id="F0f-EH-fGo"/>
+                        <viewControllerLayoutGuide type="top" id="lpH-9H-d9w"/>
+                        <viewControllerLayoutGuide type="bottom" id="NrQ-bt-Nch"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8Do-rk-uLu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -994,8 +1113,8 @@
             <objects>
                 <viewController storyboardIdentifier="WalkThru2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LFA-cA-AVS" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2uP-Bm-jb6"/>
-                        <viewControllerLayoutGuide type="bottom" id="hJV-tQ-R9S"/>
+                        <viewControllerLayoutGuide type="top" id="oxF-di-lbc"/>
+                        <viewControllerLayoutGuide type="bottom" id="p2v-iP-3iX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s67-al-jAo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1069,8 +1188,8 @@
             <objects>
                 <viewController id="zVB-BL-pEL" customClass="ConnectVehicleViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uCL-aD-8MU"/>
-                        <viewControllerLayoutGuide type="bottom" id="snI-Tn-q7Z"/>
+                        <viewControllerLayoutGuide type="top" id="ZZs-yB-7Ai"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Mx-9Q-z0g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WWy-dw-38s">
                         <rect key="frame" x="0.0" y="0.0" width="311" height="504"/>
@@ -1105,7 +1224,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="qjn-C2-H3r" kind="show" id="aQl-G7-yxB"/>
+                                            <segue destination="qjn-C2-H3r" kind="presentation" id="aQl-G7-yxB"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Showing Video Frames-52-2" translatesAutoresizingMaskIntoConstraints="NO" id="aVs-l0-AZB">
@@ -1126,15 +1245,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAG-2R-eVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188.5" y="940"/>
+            <point key="canvasLocation" x="1188.5" y="939.99999999999989"/>
         </scene>
         <!--Activation View Controller-->
         <scene sceneID="Ppw-UK-Uoy">
             <objects>
                 <viewController id="VuK-xW-8cb" customClass="ActivationViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lM1-Q3-b7L"/>
-                        <viewControllerLayoutGuide type="bottom" id="4E0-M2-DPt"/>
+                        <viewControllerLayoutGuide type="top" id="TtQ-iW-lqz"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMP-6f-MHM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xuv-FT-mfO">
                         <rect key="frame" x="0.0" y="0.0" width="311" height="504"/>
@@ -1186,20 +1305,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="zVB-BL-pEL" kind="show" identifier="activate" id="rBt-hN-ZXL"/>
+                        <segue destination="zVB-BL-pEL" kind="presentation" identifier="activate" id="rBt-hN-ZXL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50u-RD-ROn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188.5" y="355"/>
+            <point key="canvasLocation" x="1188.5" y="354.99999999999994"/>
         </scene>
         <!--Registartion View Controller-->
         <scene sceneID="3ph-4K-oUK">
             <objects>
                 <viewController id="Dgm-IO-yao" customClass="RegistartionViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6vN-WM-jQZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="17K-0V-cZO"/>
+                        <viewControllerLayoutGuide type="top" id="ccR-5o-v03"/>
+                        <viewControllerLayoutGuide type="bottom" id="WwB-Af-msc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TNP-91-FeW">
                         <rect key="frame" x="0.0" y="0.0" width="311" height="504"/>
@@ -1256,20 +1375,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="VuK-xW-8cb" kind="show" identifier="register" id="gpe-Ia-jm1"/>
+                        <segue destination="VuK-xW-8cb" kind="presentation" identifier="register" id="gpe-Ia-jm1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCx-6A-RZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764.5" y="355"/>
+            <point key="canvasLocation" x="764.5" y="354.99999999999994"/>
         </scene>
         <!--Lest Begin View Controller-->
         <scene sceneID="hqn-HI-EtH">
             <objects>
                 <viewController id="HqP-RI-gYu" customClass="LestBeginViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bBD-Qj-45N"/>
-                        <viewControllerLayoutGuide type="bottom" id="qlc-e7-akO"/>
+                        <viewControllerLayoutGuide type="top" id="g4i-m5-xJ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pma-il-lFw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yQf-Qn-qhT">
                         <rect key="frame" x="0.0" y="0.0" width="311" height="504"/>
@@ -1356,23 +1475,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="Dgm-IO-yao" kind="show" identifier="letBegin" id="MPI-In-BuD"/>
+                        <segue destination="Dgm-IO-yao" kind="presentation" identifier="letBegin" id="MPI-In-BuD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oy-uq-DyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343.5" y="355"/>
+            <point key="canvasLocation" x="343.5" y="354.99999999999994"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gN7-uI-dZf">
             <objects>
                 <viewController id="Tnx-RK-gX2" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h3t-bl-1CD"/>
-                        <viewControllerLayoutGuide type="bottom" id="icd-Ph-iVi"/>
+                        <viewControllerLayoutGuide type="top" id="cSv-Ib-yOx"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYV-EO-Yzx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p1u-m6-Nx5">
-                        <rect key="frame" x="0.0" y="0.0" width="304" height="405"/>
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="441"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgZ-Rk-f7V">
@@ -1518,7 +1637,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9RS-rH-Bxm" kind="show" id="QmG-Yg-DoV"/>
+                                    <segue destination="9RS-rH-Bxm" kind="presentation" id="QmG-Yg-DoV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1527,15 +1646,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUJ-H6-fAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2470" y="1948"/>
+            <point key="canvasLocation" x="2470" y="1947.9999999999998"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m7x-TX-Ph8">
             <objects>
                 <viewController id="OIh-mG-vXu" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wKb-ei-arg"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZT9-eg-OSg"/>
+                        <viewControllerLayoutGuide type="top" id="Mz3-tt-cps"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5C-o3-NU5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lUZ-dz-xaP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
@@ -1616,15 +1735,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZF-il-ghV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2392" y="3032.5"/>
+            <point key="canvasLocation" x="2392" y="3032.4999999999995"/>
         </scene>
         <!--View All Trips View Controller-->
         <scene sceneID="un4-Ba-gcQ">
             <objects>
                 <viewController id="9RS-rH-Bxm" customClass="ViewAllTripsViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2ou-s5-bsB"/>
-                        <viewControllerLayoutGuide type="bottom" id="YD3-up-Lo2"/>
+                        <viewControllerLayoutGuide type="top" id="bLy-Gs-wUv"/>
+                        <viewControllerLayoutGuide type="bottom" id="kkM-KG-d4I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="laf-yn-sWQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1843,15 +1962,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j6-G0-z5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3274" y="2671"/>
+            <point key="canvasLocation" x="3274" y="2670.9999999999995"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="u48-cs-lV2">
             <objects>
                 <viewController id="6ey-hV-J4C" customClass="PopUpViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VSY-Jh-WJw"/>
-                        <viewControllerLayoutGuide type="bottom" id="5Qd-6J-bM1"/>
+                        <viewControllerLayoutGuide type="top" id="PO8-YD-7hU"/>
+                        <viewControllerLayoutGuide type="bottom" id="19r-zd-gIU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D8k-6j-e6o">
                         <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
@@ -1889,15 +2008,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWw-pL-PtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3915" y="2717"/>
+            <point key="canvasLocation" x="3915" y="2716.9999999999995"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="acR-BK-fKb">
             <objects>
                 <viewController id="tzo-or-MEs" customClass="TESTViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M56-qW-ERp"/>
-                        <viewControllerLayoutGuide type="bottom" id="hTp-ac-efa"/>
+                        <viewControllerLayoutGuide type="top" id="bax-LU-H5m"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sif-6k-8Pa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HWS-4F-wMF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1924,8 +2043,8 @@
             <objects>
                 <viewController id="iUm-mS-sCg" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="spO-6M-bNr"/>
-                        <viewControllerLayoutGuide type="bottom" id="h5j-g2-YSn"/>
+                        <viewControllerLayoutGuide type="top" id="VPn-f4-hJX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7PR-1z-2L7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VIY-aj-zS0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="617"/>
@@ -2013,8 +2132,8 @@
             <objects>
                 <viewController id="d15-UV-3vt" customClass="RouteAssistantViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IxD-9J-Ieg"/>
-                        <viewControllerLayoutGuide type="bottom" id="MDE-jn-Du1"/>
+                        <viewControllerLayoutGuide type="top" id="kS6-lT-wyk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZHC-mh-Yvg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OWK-xW-T9z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -2181,15 +2300,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhW-qU-4Hl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3741" y="3309"/>
+            <point key="canvasLocation" x="3741" y="3308.9999999999995"/>
         </scene>
         <!--Emergency Contact View Controller-->
         <scene sceneID="KNh-AO-TrY">
             <objects>
                 <viewController id="tDZ-yF-wJW" customClass="EmergencyContactViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MoZ-gi-kbs"/>
-                        <viewControllerLayoutGuide type="bottom" id="SAN-cT-hfE"/>
+                        <viewControllerLayoutGuide type="top" id="oX3-p6-Xfl"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wl-8F-OmN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HSX-cP-6i3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -2354,15 +2473,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Msb-3c-Z2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="1180"/>
+            <point key="canvasLocation" x="-420" y="1179.9999999999998"/>
         </scene>
         <!--Add Contact Popup View Controller-->
         <scene sceneID="35N-zs-Rb7">
             <objects>
                 <viewController storyboardIdentifier="AddContactPopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y4e-c7-UKM" customClass="AddContactPopupViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hMo-8p-uGk"/>
-                        <viewControllerLayoutGuide type="bottom" id="x28-lv-fvI"/>
+                        <viewControllerLayoutGuide type="top" id="eNH-qS-c6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="gsE-Jx-Ivc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9IG-gL-XcJ">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
@@ -2421,15 +2540,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0T-le-QPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-917" y="1180"/>
+            <point key="canvasLocation" x="-917" y="1179.9999999999998"/>
         </scene>
         <!--Car Servicing Popup View Controller-->
         <scene sceneID="FeR-dN-iCI">
             <objects>
                 <viewController storyboardIdentifier="CarServicingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d2X-9n-JkH" customClass="carServicingPopupViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hU4-zz-Ry9"/>
-                        <viewControllerLayoutGuide type="bottom" id="7E8-g4-Sg2"/>
+                        <viewControllerLayoutGuide type="top" id="VdX-zH-VpI"/>
+                        <viewControllerLayoutGuide type="bottom" id="07C-KZ-9Pn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="avv-xw-XgI">
                         <rect key="frame" x="0.0" y="0.0" width="260" height="350"/>
@@ -2485,15 +2604,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjB-IF-MFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-542" y="1803"/>
+            <point key="canvasLocation" x="-542" y="1802.9999999999998"/>
         </scene>
         <!--Car Servicing View Controller-->
         <scene sceneID="4Pp-SB-Em7">
             <objects>
                 <viewController id="I1g-TG-rsx" customClass="CarServicingViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ru2-er-mbR"/>
-                        <viewControllerLayoutGuide type="bottom" id="afy-kv-DHr"/>
+                        <viewControllerLayoutGuide type="top" id="rT0-fG-7CG"/>
+                        <viewControllerLayoutGuide type="bottom" id="hHh-Ts-JkG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UPk-Ym-m9R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -2599,7 +2718,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOG-XA-22k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-898" y="1827"/>
+            <point key="canvasLocation" x="-898" y="1826.9999999999998"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IFV-4F-0H9">
@@ -2900,8 +3019,8 @@
             <objects>
                 <viewController id="wMP-So-1Sb" customClass="PopUpViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9Pr-G3-op8"/>
-                        <viewControllerLayoutGuide type="bottom" id="3Bc-4i-cdd"/>
+                        <viewControllerLayoutGuide type="top" id="twf-GC-ycu"/>
+                        <viewControllerLayoutGuide type="bottom" id="aUv-fP-NG1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xGc-tU-8ys">
                         <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
@@ -2955,15 +3074,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YD-D1-f13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970" y="3427"/>
+            <point key="canvasLocation" x="-970.00000000000011" y="3426.9999999999995"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kmb-gi-Xae">
             <objects>
                 <viewController id="fve-Kt-Kur" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RQU-Td-5Gu"/>
-                        <viewControllerLayoutGuide type="bottom" id="Js5-FF-Z3k"/>
+                        <viewControllerLayoutGuide type="top" id="eoD-yQ-iZT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HiY-zX-yaY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YdU-de-uf1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2981,8 +3100,8 @@
             <objects>
                 <viewController id="xKH-u1-53w" customClass="CarServiceCommentViewController" customModule="AutomationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FDR-0D-JhL"/>
-                        <viewControllerLayoutGuide type="bottom" id="hJy-2o-3FB"/>
+                        <viewControllerLayoutGuide type="top" id="JgP-xh-Zbq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lv0-p8-sL4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u0H-R0-l2f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -3104,7 +3223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2J3-ls-1Zo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-960" y="2602"/>
+            <point key="canvasLocation" x="-960" y="2601.9999999999995"/>
         </scene>
         <!--Car Servicing Previouscar Comment Table View Controller-->
         <scene sceneID="uHs-NN-Ya6">
@@ -3275,6 +3394,7 @@
         <image name="Person Male-48" width="48" height="48"/>
         <image name="Phone-52" width="52" height="52"/>
         <image name="REdRounded Rectangle-48-2" width="48" height="48"/>
+        <image name="Recurring Appointment-48" width="48" height="48"/>
         <image name="Rounded Rectangle-48-2" width="48" height="48"/>
         <image name="Settings Filled-50" width="50" height="50"/>
         <image name="Settings-48" width="48" height="48"/>
@@ -3288,6 +3408,7 @@
         <image name="car Structure" width="540" height="405"/>
         <image name="car service center" width="254" height="198"/>
         <image name="carSevicing" width="275" height="183"/>
+        <image name="carTyreInstall" width="1920" height="1080"/>
         <image name="cartools" width="1300" height="1069"/>
         <image name="emergecyzcontac" width="216" height="233"/>
         <image name="family" width="1300" height="1138"/>
@@ -3303,8 +3424,8 @@
         <image name="user" width="123" height="123"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rBt-hN-ZXL"/>
-        <segue reference="gpe-Ia-jm1"/>
+        <segue reference="tox-mv-hCm"/>
+        <segue reference="B2j-zD-dsT"/>
         <segue reference="zfr-1V-edr"/>
     </inferredMetricsTieBreakers>
 </document>
