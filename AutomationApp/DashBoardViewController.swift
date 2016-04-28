@@ -26,14 +26,18 @@ class DashBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
     
     @IBOutlet weak var simpleButton: UIButton!
     
+    
+    @IBOutlet weak var barButton: UIBarButtonItem!
+    
     var util = Util()
     var numberArray = ["78","80%","9"]
     var textArray = ["Trips","Driving score","Area of improvment"]
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-     
+       // modalTransitionStyle = .FlipHorizontal
+     barButton = UIBarButtonItem()
+    
         if self.revealViewController() != nil
         {
             menuButton.target = self.revealViewController()

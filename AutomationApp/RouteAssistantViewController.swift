@@ -21,6 +21,10 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
     
     @IBOutlet weak var entertainmentView: UIView!
     
+    
+    @IBOutlet weak var userProfilePic: UIImageView!
+    
+    
     var assistantLableArray = ["PETROL","AIRPORT","FOOD","ENTAIRTENMAIN"]
     var assistantImageArray = ["Car-100","Airplane Mode On Filled-100","Pizza Filled-100 (1)","Park Concert Shell-96 (1)"]
     override func viewDidLoad() {

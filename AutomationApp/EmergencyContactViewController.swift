@@ -10,7 +10,7 @@ import UIKit
 import ContactsUI
 import Contacts
 
-class EmergencyContactViewController: UIViewController ,UIPopoverPresentationControllerDelegate,SavingViewControllerDelegate,AddContactViewControllerDelegate{
+class EmergencyContactViewController: UIViewController ,UIPopoverPresentationControllerDelegate,SavingViewControllerDelegate,AddContactViewControllerDelegate,UITextFieldDelegate{
     
     var util  = Util()
 
@@ -65,6 +65,9 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     @IBAction func addContactButtonPressed(sender: AnyObject)
     
     {
+        
+        properUIContact1()
+        
         let savingsInformationViewController = storyboard?.instantiateViewControllerWithIdentifier("AddContactPopupViewController") as! AddContactPopupViewController
         
         contactPriority = 1
@@ -97,6 +100,9 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     
     @IBAction func AddContact2ButtonPressed(sender: AnyObject)
     {
+        
+        properUIContact2()
+        
         let savingsInformationViewController = storyboard?.instantiateViewControllerWithIdentifier("AddContactPopupViewController") as! AddContactPopupViewController
         
         contactPriority = 2
@@ -129,6 +135,8 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     
     @IBAction func AddContact3ButtonPressed(sender: AnyObject)
     {
+        properUIContact3()
+        
         
         let savingsInformationViewController = storyboard?.instantiateViewControllerWithIdentifier("AddContactPopupViewController") as! AddContactPopupViewController
         
@@ -176,6 +184,45 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     }
     
     
+    // Setting UI Of Contact
+    func properUIContact1()
+    {
+        subLogoImageView.image = UIImage(named: "Ok-48")
+        
+        util.bottomBorderTextfield(contact1NameText)
+        util.roundImage(contact1ProfilePic)
+        
+        contact1ProfilePic.image = UIImage(named: "randomuser1")
+        contact1Mobile.backgroundColor = UIColor.whiteColor()
+        contact1Email.backgroundColor = UIColor.whiteColor()
+    }
+    func properUIContact2()
+    {
+        subLogoImageView.image = UIImage(named: "Ok-48")
+        
+        util.bottomBorderTextfield(contact2NameText)
+        util.roundImage(contact2ProfilePic)
+        
+        contact2ProfilePic.image = UIImage(named: "randomuser1")
+        contact2Mobile.backgroundColor = UIColor.whiteColor()
+        contact2Email.backgroundColor = UIColor.whiteColor()
+    }
+    
+    func properUIContact3()
+    {
+        subLogoImageView.image = UIImage(named: "Ok-48")
+        
+        util.bottomBorderTextfield(contact3NameText)
+        util.roundImage(contact3imageView)
+        
+        contact3imageView.image = UIImage(named: "randomuser1")
+        contact3Mobile.backgroundColor = UIColor.whiteColor()
+        contact3Email.backgroundColor = UIColor.whiteColor()
+    }
+    
+    
+    
+    
     func saveText(strText: NSString)
     {
         //contact1Name.text=strText as String
@@ -193,15 +240,7 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         addedStatusLabel.text = "Added 1 out of 3"
         
         self.formatLabel()
-        /*
-        subLogoImageView.image = UIImage(named: "Ok-48")
-        util.bottomBorderLabel(contact1Name)
-        util.roundImage(contact1ProfilePic)
-        
-        contact1ProfilePic.image = UIImage(named: "randomuser1")
-        contact1Name.backgroundColor = UIColor.whiteColor()
-        phoneNumberLable.backgroundColor = UIColor.whiteColor()
-        emailLable.backgroundColor = UIColor.whiteColor()   */
+
     }
     
     
@@ -212,17 +251,8 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         print("contact2Name.text",contact2NameText.text)
         contact2Mobile.text = phoneNumber
         contact2Email.text = mobileNumber
-        
-        subLogoImageView.image = UIImage(named: "Ok-48")
         addedStatusLabel.text = "Added 2 out of 3"
-        
-        util.bottomBorderTextfield(contact2NameText)
-        util.roundImage(contact2ProfilePic)
-        
-        contact2ProfilePic.image = UIImage(named: "randomuser1")
-        contact2NameText.backgroundColor = UIColor.whiteColor()
-        contact2Mobile.backgroundColor = UIColor.whiteColor()
-        contact2Email.backgroundColor = UIColor.whiteColor()
+
     }
     
     
@@ -232,20 +262,9 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         contact3NameText.text = name
         contact3Mobile.text = phoneNumber
         contact3Email.text = mobileNumber
-        
-        subLogoImageView.image = UIImage(named: "Ok-48")
         addedStatusLabel.text = "Added 3 out of 3"
-        
-        
-        
-        
-        util.bottomBorderTextfield(contact3NameText)
-        util.roundImage(contact3imageView)
-        
-        contact3imageView.image = UIImage(named: "randomuser1")
-         contact3NameText.backgroundColor = UIColor.whiteColor()
-        contact3Mobile.backgroundColor = UIColor.whiteColor()
-        contact3Email.backgroundColor = UIColor.whiteColor()
+//        subLogoImageView.image = UIImage(named: "Ok-48")
+
     }
     
     func didFetchContacts(contacts: [CNContact])
@@ -285,7 +304,8 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         
        
         
-        if contacts[0].isKeyAvailable(CNContactPhoneNumbersKey) {
+        if contacts[0].isKeyAvailable(CNContactPhoneNumbersKey)
+        {
             if let
                 phonenumberValue = contacts[0].phoneNumbers.first,
                 pn = phonenumberValue.value as? CNPhoneNumber where phonenumberValue.value is CNPhoneNumber
@@ -295,18 +315,42 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         }
 
         
-        if  contacts[0].isKeyAvailable(CNContactEmailAddressesKey) {
+        if  contacts[0].isKeyAvailable(CNContactEmailAddressesKey)
+        {
             if let emailValue =  contacts[0].emailAddresses.first!.value as? String
             {
                 email = emailValue
             }
         }
-     
-        contact1NameText.text = name
-        contact1Mobile.text = phoneNumber
-        contact1Email.text = email
         
-        self.formatLabel()
+        
+        
+        if(contactPriority == 1)
+        {
+            addedStatusLabel.text = "Added 1 out of 3"
+            contact1NameText.text = name
+            contact1Mobile.text = phoneNumber
+            contact1Email.text = email
+           // self.formatLabel()
+        }
+        if(contactPriority == 2)
+        {
+            addedStatusLabel.text = "Added 2 out of 3"
+            contact2NameText.text = name
+            contact2Mobile.text = phoneNumber
+            contact2Email.text = email
+ 
+        }
+        
+        if(contactPriority == 3)
+        {
+            addedStatusLabel.text = "Added 3 out of 3"
+            contact3NameText.text = name
+            contact3Mobile.text = phoneNumber
+            contact3Email.text = email
+            
+        }
+        
         
         
         for contact in contacts
@@ -322,6 +366,8 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.contact1NameText.delegate = self
         //util.roundButton(AddContact)
     }
 
@@ -370,8 +416,21 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     */
     
     
+    
+    @IBAction func editNameButtonPresed(sender: AnyObject)
+    {
+        
+       contact1NameText.userInteractionEnabled = true
 
+    }
 
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        self.view.endEditing(true)
+        
+        contact1NameText.userInteractionEnabled = false
+        return false
+    }
 }
 
 

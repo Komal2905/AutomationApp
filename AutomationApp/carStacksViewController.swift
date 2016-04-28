@@ -14,7 +14,9 @@ import Contacts
 import ContactsUI
 
 
-class carStacksViewController: UIViewController, CNContactPickerDelegate {
+
+
+class carStacksViewController: UIViewController, CNContactPickerDelegate,UIViewControllerTransitioningDelegate {
     
     @IBAction func showContact(sender: AnyObject) {
          self.showContacts()
@@ -29,7 +31,7 @@ class carStacksViewController: UIViewController, CNContactPickerDelegate {
     {
         
 //        let finishPoint = CGPointMake(600,  1000)
-//        
+//
 //        
 //        
 //        UIView.animateWithDuration(0.2,
@@ -38,56 +40,8 @@ class carStacksViewController: UIViewController, CNContactPickerDelegate {
 //                                    self.view1.transform = CGAffineTransformMakeRotation(1)
 //            }, completion: nil /*{
 //             */)
-
         
-        
-        
-        let status = CNContactStore.authorizationStatusForEntityType(.Contacts)
-        if status == .Denied || status == .Restricted {
-            // user previously denied, so tell them to fix that in settings
-            return
-        }
-        
-        // open it
-        
-        let store = CNContactStore()
-        store.requestAccessForEntityType(.Contacts) { granted, error in
-            guard granted else {
-                dispatch_async(dispatch_get_main_queue()) {
-                    // user didn't grant authorization, so tell them to fix that in settings
-                    print(error)
-                }
-                return
-            }
-            
-            // get the contacts
-            
-            var contacts = [CNContact]()
-            let request = CNContactFetchRequest(keysToFetch: [CNContactIdentifierKey, CNContactFormatter.descriptorForRequiredKeysForStyle(.FullName)])
-            do {
-                try store.enumerateContactsWithFetchRequest(request) { contact, stop in
-                    contacts.append(contact)
-                }
-            } catch {
-                print(error)
-            }
-            
-            // do something with the contacts array (e.g. print the names)
-            
-            let formatter = CNContactFormatter()
-            formatter.style = .FullName
-            for contact in contacts {
-                print(formatter.stringFromContact(contact))
-            }
-        }
-        
-        
-        self.showContacts()
-        
-        
-//        view1.animation = "fall"
-//        view1.duration = 2.0
-//        view1.animate()
+       
     }
     
     
@@ -117,6 +71,8 @@ class carStacksViewController: UIViewController, CNContactPickerDelegate {
                                    animations: {
                                     self.view2.center = finishPoint
                                     self.view2.transform = CGAffineTransformMakeRotation(1)
+                                    
+                                    self.view2.alpha = 0
             }, completion: nil /*{
              */)
         
@@ -135,9 +91,11 @@ class carStacksViewController: UIViewController, CNContactPickerDelegate {
                                    animations: {
                                     self.view3.center = finishPoint
                                     self.view3.transform = CGAffineTransformMakeRotation(9)
+                                    self.view3.alpha = 0
             }, completion: nil /*{
              */)
 
+      
     }
     
     
@@ -154,16 +112,19 @@ class carStacksViewController: UIViewController, CNContactPickerDelegate {
                                    animations: {
                                     self.view4.center = finishPoint
                                     self.view4.transform = CGAffineTransformMakeRotation(1)
+                                    self.view4.alpha = 0
             }, completion: nil /*{
              */)
-        
+       
         
 
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //view4 = DesignableView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        //view4 = DesignableView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+        
+        view4.frame =  CGRectMake(0 , 10, 200, 200)
     }
 
     override func didReceiveMemoryWarning() {
