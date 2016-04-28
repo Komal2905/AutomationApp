@@ -6,5 +6,6 @@ use_frameworks!
 target 'AutomationApp' do
 pod 'ImageSlideshow', '~> 0.4'
 pod "ImageSlideshow/Alamofire"
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 end
 

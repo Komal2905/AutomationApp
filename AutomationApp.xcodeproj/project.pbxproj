@@ -35,6 +35,10 @@
 		99EF3F931CC89E20005BE0BF /* ActivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF3F921CC89E20005BE0BF /* ActivationViewController.swift */; };
 		99EF3F951CC89E2F005BE0BF /* ConnectVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF3F941CC89E2F005BE0BF /* ConnectVehicleViewController.swift */; };
 		99F125B91CCF354800A36BF3 /* carServicingPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F125B81CCF354800A36BF3 /* carServicingPopupViewController.swift */; };
+		99F3E1CB1CD077EF0030B2B5 /* WalkThru1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3E1CA1CD077EF0030B2B5 /* WalkThru1ViewController.swift */; };
+		99F3E1D11CD078540030B2B5 /* WalkThru3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3E1D01CD078540030B2B5 /* WalkThru3ViewController.swift */; };
+		99F3E1D31CD07B6C0030B2B5 /* WalkThru2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3E1D21CD07B6C0030B2B5 /* WalkThru2ViewController.swift */; };
+		99F3E1D51CD0C3380030B2B5 /* carStacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3E1D41CD0C3380030B2B5 /* carStacksViewController.swift */; };
 		99FD26531CC9E43000940F9C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD26521CC9E43000940F9C /* Util.swift */; };
 		99FD26551CCA0F2800940F9C /* DashBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD26541CCA0F2800940F9C /* DashBoardCollectionViewCell.swift */; };
 		99FD26571CCA242A00940F9C /* TripAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD26561CCA242A00940F9C /* TripAnalysisViewController.swift */; };
@@ -80,6 +84,10 @@
 		99EF3F921CC89E20005BE0BF /* ActivationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationViewController.swift; sourceTree = "<group>"; };
 		99EF3F941CC89E2F005BE0BF /* ConnectVehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectVehicleViewController.swift; sourceTree = "<group>"; };
 		99F125B81CCF354800A36BF3 /* carServicingPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carServicingPopupViewController.swift; sourceTree = "<group>"; };
+		99F3E1CA1CD077EF0030B2B5 /* WalkThru1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThru1ViewController.swift; sourceTree = "<group>"; };
+		99F3E1D01CD078540030B2B5 /* WalkThru3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThru3ViewController.swift; sourceTree = "<group>"; };
+		99F3E1D21CD07B6C0030B2B5 /* WalkThru2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkThru2ViewController.swift; sourceTree = "<group>"; };
+		99F3E1D41CD0C3380030B2B5 /* carStacksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = carStacksViewController.swift; sourceTree = "<group>"; };
 		99FD26521CC9E43000940F9C /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		99FD26541CCA0F2800940F9C /* DashBoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		99FD26561CCA242A00940F9C /* TripAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripAnalysisViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 				99EF3F781CC89178005BE0BF /* AppDelegate.swift */,
 				99EF3F7A1CC89178005BE0BF /* ViewController.swift */,
 				99EF3F7C1CC89178005BE0BF /* Main.storyboard */,
+				99F3E1D41CD0C3380030B2B5 /* carStacksViewController.swift */,
 				9964FFE11CCF6CC900B1EA12 /* TPMSInstallationViewController.swift */,
 				9964FFDF1CCF467800B1EA12 /* CarServiceCommentViewController.swift */,
 				9964FFDB1CCF3CCC00B1EA12 /* carServicingPreviouscarCommentTableViewController.swift */,
@@ -180,6 +189,9 @@
 				9964FFDD1CCF40D300B1EA12 /* CommentTableViewCell.swift */,
 				99FDA8321CCDF61100BF16CA /* PopUpViewController.swift */,
 				99FDA8341CCE0B6F00BF16CA /* LineView.swift */,
+				99F3E1D01CD078540030B2B5 /* WalkThru3ViewController.swift */,
+				99F3E1CA1CD077EF0030B2B5 /* WalkThru1ViewController.swift */,
+				99F3E1D21CD07B6C0030B2B5 /* WalkThru2ViewController.swift */,
 			);
 			name = CustomFiles;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 				TargetAttributes = {
 					99EF3F741CC89178005BE0BF = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 4GWEB3LU7A;
 					};
 				};
 			};
@@ -334,11 +347,14 @@
 				99EF3F951CC89E2F005BE0BF /* ConnectVehicleViewController.swift in Sources */,
 				99FD26531CC9E43000940F9C /* Util.swift in Sources */,
 				99EF3F911CC89E02005BE0BF /* RegistartionViewController.swift in Sources */,
+				99F3E1D31CD07B6C0030B2B5 /* WalkThru2ViewController.swift in Sources */,
 				994EFC801CCE2F21000523FE /* EmergencyContactViewController.swift in Sources */,
 				99FDA8371CCE0D0000BF16CA /* TESTViewController.swift in Sources */,
+				99F3E1D51CD0C3380030B2B5 /* carStacksViewController.swift in Sources */,
 				995A2EF21CC8F34D001704B8 /* SWRevealViewController.m in Sources */,
 				995A2EED1CC8C9B5001704B8 /* PageViewController.swift in Sources */,
 				99EF3F811CC89178005BE0BF /* AutomationApp.xcdatamodeld in Sources */,
+				99F3E1D11CD078540030B2B5 /* WalkThru3ViewController.swift in Sources */,
 				995A2EF61CC912DC001704B8 /* WelcomeViewController.swift in Sources */,
 				99EF3F931CC89E20005BE0BF /* ActivationViewController.swift in Sources */,
 				992B0A6A1CC8A27D00FC59AA /* DragableViewBackground.swift in Sources */,
@@ -349,6 +365,7 @@
 				994EFC821CCE3AB8000523FE /* AddContactPopupViewController.swift in Sources */,
 				99EF3F7B1CC89178005BE0BF /* ViewController.swift in Sources */,
 				994EFC841CCE5A5D000523FE /* CarServicingViewController.swift in Sources */,
+				99F3E1CB1CD077EF0030B2B5 /* WalkThru1ViewController.swift in Sources */,
 				992B0A741CC8C40C00FC59AA /* CustomSegue.swift in Sources */,
 				9964FFE21CCF6CC900B1EA12 /* TPMSInstallationViewController.swift in Sources */,
 				9964FFDC1CCF3CCC00B1EA12 /* carServicingPreviouscarCommentTableViewController.swift in Sources */,
@@ -480,10 +497,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AutomationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Automation.AutomationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutomationApp/AutomationApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -495,10 +515,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AutomationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Automation.AutomationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AutomationApp/AutomationApp-Bridging-Header.h";
 			};
 			name = Release;

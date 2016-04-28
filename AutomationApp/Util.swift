@@ -17,7 +17,7 @@ public class Util
         
         let border = CALayer()
         let width = CGFloat(0.9)
-        border.borderColor = UIColor.whiteColor().CGColor
+        border.borderColor = UIColor.darkGrayColor().CGColor
         border.frame = CGRect(x: 0, y: textfield.frame.size.height - width, width:  textfield.frame.size.width, height: textfield.frame.size.height)
         
         
@@ -123,4 +123,23 @@ extension CALayer {
         self.addSublayer(border)
     }
     
+}
+
+
+// fade in and out effect
+
+extension UIView {
+    func fadeIn(duration: NSTimeInterval = 4.0, delay: NSTimeInterval = 0.0, completion: ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        UIView.animateWithDuration(duration, delay: delay, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.alpha = 0.0
+            }, completion: completion)  }
+    
+    func fadeOut(duration: NSTimeInterval = 5.0, delay: NSTimeInterval = 0.0, completion: (Bool) -> Void = {(finished: Bool) -> Void in}) {
+        UIView.animateWithDuration(duration, delay: delay, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+            self.alpha = 1.0
+            }, completion: completion)
+        
+        
+        
+}
 }

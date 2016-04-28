@@ -8,14 +8,27 @@ PODS:
     - AlamofireImage (~> 2.0)
     - ImageSlideshow/Core
   - ImageSlideshow/Core (0.4.0)
+  - Spring (1.0.3)
 
 DEPENDENCIES:
   - ImageSlideshow (~> 0.4)
   - ImageSlideshow/Alamofire
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift2
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   AlamofireImage: 87408b652e0f5ae5fe364035f15aea8b9b24c77e
   ImageSlideshow: 0d3632bc0c2b4d3fff24a49ce4d3022af8238b03
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
 COCOAPODS: 0.39.0

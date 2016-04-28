@@ -50,12 +50,6 @@ class WalkThruViewController: UIViewController {
             tutorialPageViewController?.tutorialDelegate = self
         }
     }
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.hidden = true

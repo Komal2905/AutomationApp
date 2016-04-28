@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AutomationApp/Alamofire.framework"
   install_framework "Pods-AutomationApp/AlamofireImage.framework"
   install_framework "Pods-AutomationApp/ImageSlideshow.framework"
+  install_framework "Pods-AutomationApp/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AutomationApp/Alamofire.framework"
   install_framework "Pods-AutomationApp/AlamofireImage.framework"
   install_framework "Pods-AutomationApp/ImageSlideshow.framework"
+  install_framework "Pods-AutomationApp/Spring.framework"
 fi

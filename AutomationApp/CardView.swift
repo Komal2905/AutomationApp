@@ -44,6 +44,28 @@ class CardView: UIView {
         layer.shadowOpacity = shadowOpacity
         layer.shadowPath = shadowPath.CGPath
     }
+    func circularView(view : UIView)
+    {
+        let cornerRadius: CGFloat = 24
+        
+        let shadowOffsetWidth: Int = 0
+        let shadowOffsetHeight: Int = 1
+        let shadowColor: UIColor? = UIColor.blackColor()
+        let shadowOpacity: Float = 0.5
+        
+        //    func layoutSubviews() {
+        view.layer.cornerRadius = cornerRadius
+        let shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: cornerRadius)
+        
+        view.layer.masksToBounds = false
+        view.layer.shadowRadius = 2
+        view.layer.shadowColor = shadowColor?.CGColor
+        view.layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
+        view.layer.shadowOpacity = shadowOpacity
+        view.layer.shadowPath = shadowPath.CGPath
+        //  }
+        
+    }
 
 }
 
@@ -105,7 +127,12 @@ class CircleViewContact : UIView {
         layer.shadowPath = shadowPath.CGPath
     }
     
+    
+    
+    
 }
+
+
 
 class HairlineView: UIView {
     override func awakeFromNib() {
