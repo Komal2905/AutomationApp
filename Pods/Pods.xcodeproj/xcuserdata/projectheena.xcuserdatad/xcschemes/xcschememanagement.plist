@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,10 +39,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftCharts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>05094CC4A047119F7ADC14EE74C4881C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0DDE23A0F6DFE63928CCB51708567B0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8DDD996746E963E96476CAD85151237</key>
+		<key>BC059CAB077F872913EC6F221C530A68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFA888FDF357B757D4F1F486646B343A</key>
+		<key>C6828C2508515BC0428D6BDAA1292DC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE2483A32FED8B3061F0403C1E84C687</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -228,6 +228,7 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
         //contact1Name.text=strText as String
     }
     
+    @IBOutlet weak var menyButton: UIBarButtonItem!
     func saveContact1(name : String, phoneNumber : String, email: String)
     {
         
@@ -323,7 +324,10 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
             }
         }
         
-        
+//        if let status = "Checked"
+//        {
+//            let newStatus = status
+//        }
         
         if(contactPriority == 1)
         {
@@ -366,6 +370,15 @@ class EmergencyContactViewController: UIViewController ,UIPopoverPresentationCon
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
+        
+        if self.revealViewController() != nil {
+            menyButton.target = self.revealViewController()
+            menyButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+
         
         self.contact1NameText.delegate = self
         //util.roundButton(AddContact)

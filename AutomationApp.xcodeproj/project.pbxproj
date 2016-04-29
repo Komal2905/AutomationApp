@@ -46,7 +46,10 @@
 		99FD265B1CCA4F5200940F9C /* RouteAssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD265A1CCA4F5200940F9C /* RouteAssistantViewController.swift */; };
 		99FDA8331CCDF61100BF16CA /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FDA8321CCDF61100BF16CA /* PopUpViewController.swift */; };
 		99FDA8351CCE0B6F00BF16CA /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FDA8341CCE0B6F00BF16CA /* LineView.swift */; };
-		99FDA8371CCE0D0000BF16CA /* TESTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FDA8361CCE0D0000BF16CA /* TESTViewController.swift */; };
+		99FF6C891CD359100035E552 /* TESTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF6C881CD359100035E552 /* TESTViewController.swift */; };
+		99FF6C8B1CD3617E0035E552 /* test2222ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF6C8A1CD3617E0035E552 /* test2222ViewController.swift */; };
+		99FF6C8D1CD363CE0035E552 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF6C8C1CD363CE0035E552 /* FirstViewController.swift */; };
+		99FF6C941CD36B750035E552 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF6C931CD36B750035E552 /* FocusViewController.swift */; };
 		D858218643F5EFC903B95919 /* Pods_AutomationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBADB1788B1375933B447A4A /* Pods_AutomationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +98,10 @@
 		99FD265A1CCA4F5200940F9C /* RouteAssistantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAssistantViewController.swift; sourceTree = "<group>"; };
 		99FDA8321CCDF61100BF16CA /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		99FDA8341CCE0B6F00BF16CA /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
-		99FDA8361CCE0D0000BF16CA /* TESTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TESTViewController.swift; sourceTree = "<group>"; };
+		99FF6C881CD359100035E552 /* TESTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TESTViewController.swift; sourceTree = "<group>"; };
+		99FF6C8A1CD3617E0035E552 /* test2222ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test2222ViewController.swift; sourceTree = "<group>"; };
+		99FF6C8C1CD363CE0035E552 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		99FF6C931CD36B750035E552 /* FocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		C6AEED142EF6B39CE329F455 /* Pods-AutomationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutomationApp/Pods-AutomationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DBADB1788B1375933B447A4A /* Pods_AutomationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +154,10 @@
 				99EF3F781CC89178005BE0BF /* AppDelegate.swift */,
 				99EF3F7A1CC89178005BE0BF /* ViewController.swift */,
 				99EF3F7C1CC89178005BE0BF /* Main.storyboard */,
+				99FF6C931CD36B750035E552 /* FocusViewController.swift */,
+				99FF6C8C1CD363CE0035E552 /* FirstViewController.swift */,
+				99FF6C8A1CD3617E0035E552 /* test2222ViewController.swift */,
+				99FF6C881CD359100035E552 /* TESTViewController.swift */,
 				99F3E1D41CD0C3380030B2B5 /* carStacksViewController.swift */,
 				9964FFE11CCF6CC900B1EA12 /* TPMSInstallationViewController.swift */,
 				9964FFDF1CCF467800B1EA12 /* CarServiceCommentViewController.swift */,
@@ -156,7 +166,6 @@
 				994EFC831CCE5A5D000523FE /* CarServicingViewController.swift */,
 				994EFC7F1CCE2F21000523FE /* EmergencyContactViewController.swift */,
 				994EFC811CCE3AB8000523FE /* AddContactPopupViewController.swift */,
-				99FDA8361CCE0D0000BF16CA /* TESTViewController.swift */,
 				99FD26581CCA3CBF00940F9C /* ViewAllTripsViewController.swift */,
 				99FD26561CCA242A00940F9C /* TripAnalysisViewController.swift */,
 				995A2EF31CC8F4DC001704B8 /* DashBoardViewController.swift */,
@@ -344,16 +353,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FF6C8B1CD3617E0035E552 /* test2222ViewController.swift in Sources */,
 				99EF3F951CC89E2F005BE0BF /* ConnectVehicleViewController.swift in Sources */,
 				99FD26531CC9E43000940F9C /* Util.swift in Sources */,
 				99EF3F911CC89E02005BE0BF /* RegistartionViewController.swift in Sources */,
 				99F3E1D31CD07B6C0030B2B5 /* WalkThru2ViewController.swift in Sources */,
 				994EFC801CCE2F21000523FE /* EmergencyContactViewController.swift in Sources */,
-				99FDA8371CCE0D0000BF16CA /* TESTViewController.swift in Sources */,
+				99FF6C891CD359100035E552 /* TESTViewController.swift in Sources */,
 				99F3E1D51CD0C3380030B2B5 /* carStacksViewController.swift in Sources */,
 				995A2EF21CC8F34D001704B8 /* SWRevealViewController.m in Sources */,
 				995A2EED1CC8C9B5001704B8 /* PageViewController.swift in Sources */,
 				99EF3F811CC89178005BE0BF /* AutomationApp.xcdatamodeld in Sources */,
+				99FF6C941CD36B750035E552 /* FocusViewController.swift in Sources */,
 				99F3E1D11CD078540030B2B5 /* WalkThru3ViewController.swift in Sources */,
 				995A2EF61CC912DC001704B8 /* WelcomeViewController.swift in Sources */,
 				99EF3F931CC89E20005BE0BF /* ActivationViewController.swift in Sources */,
@@ -361,6 +372,7 @@
 				99FD265B1CCA4F5200940F9C /* RouteAssistantViewController.swift in Sources */,
 				992B0A6D1CC8A28900FC59AA /* DragableView.swift in Sources */,
 				99FD26551CCA0F2800940F9C /* DashBoardCollectionViewCell.swift in Sources */,
+				99FF6C8D1CD363CE0035E552 /* FirstViewController.swift in Sources */,
 				99F125B91CCF354800A36BF3 /* carServicingPopupViewController.swift in Sources */,
 				994EFC821CCE3AB8000523FE /* AddContactPopupViewController.swift in Sources */,
 				99EF3F7B1CC89178005BE0BF /* ViewController.swift in Sources */,

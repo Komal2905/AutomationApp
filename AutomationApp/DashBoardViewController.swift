@@ -45,10 +45,16 @@ class DashBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+
         self.revealViewController().rearViewRevealWidth = 250
         
         
-        scrollView.contentSize = CGSize(width:320, height: 600)
+        scrollView.contentSize = CGSize(width:320, height: 550)
 
         util.roundImage(profilePicImageView)
         

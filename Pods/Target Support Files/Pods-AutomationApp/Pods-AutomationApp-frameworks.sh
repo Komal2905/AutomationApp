@@ -86,12 +86,16 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AutomationApp/Alamofire.framework"
   install_framework "Pods-AutomationApp/AlamofireImage.framework"
+  install_framework "Pods-AutomationApp/Charts.framework"
   install_framework "Pods-AutomationApp/ImageSlideshow.framework"
   install_framework "Pods-AutomationApp/Spring.framework"
+  install_framework "Pods-AutomationApp/SwiftCharts.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AutomationApp/Alamofire.framework"
   install_framework "Pods-AutomationApp/AlamofireImage.framework"
+  install_framework "Pods-AutomationApp/Charts.framework"
   install_framework "Pods-AutomationApp/ImageSlideshow.framework"
   install_framework "Pods-AutomationApp/Spring.framework"
+  install_framework "Pods-AutomationApp/SwiftCharts.framework"
 fi

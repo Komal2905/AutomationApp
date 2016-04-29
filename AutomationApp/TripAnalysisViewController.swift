@@ -22,7 +22,10 @@ class TripAnalysisViewController: UIViewController, UICollectionViewDataSource,U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        facusView.hidden = false
 
+        
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"

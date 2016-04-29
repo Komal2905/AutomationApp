@@ -18,6 +18,7 @@ class CarServicingViewController: UIViewController,UIPopoverPresentationControll
     @IBOutlet weak var preServiceCommentLabel: UILabel!
     
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -28,12 +29,25 @@ class CarServicingViewController: UIViewController,UIPopoverPresentationControll
         util.bottomBorderLabel(preServiceCommentLabel)
         
         scrollView.contentSize = CGSize(width: 320, height: 600)
+        
+        
+        
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   
+    
     
     
     @IBAction func addCarServicingButtonPressed(sender: AnyObject)

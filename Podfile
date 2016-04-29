@@ -7,5 +7,7 @@ target 'AutomationApp' do
 pod 'ImageSlideshow', '~> 0.4'
 pod "ImageSlideshow/Alamofire"
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+pod 'SwiftCharts', '~> 0.3'
+pod 'Charts'
 end
 

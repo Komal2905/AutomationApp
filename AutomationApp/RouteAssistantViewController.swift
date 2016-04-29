@@ -25,23 +25,30 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
     @IBOutlet weak var userProfilePic: UIImageView!
     
     
-    var assistantLableArray = ["PETROL","AIRPORT","FOOD","ENTAIRTENMAIN"]
+    var assistantLableArray = ["PETROL","AIRPORT","FOOD","ENTERTAINMENT"]
     var assistantImageArray = ["Car-100","Airplane Mode On Filled-100","Pizza Filled-100 (1)","Park Concert Shell-96 (1)"]
+    
+    var util = Util()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = CGSize(width:320, height: 750)
+        scrollView.contentSize = CGSize(width:320, height: 600)
         pertolView.hidden = false
         FoodVIew.hidden = true
         airportView.hidden = true
         
         entertainmentView.hidden = true
         
+        util.roundImage(userProfilePic)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        scrollView.contentSize = CGSize(width: 320, height: 700)
+        scrollView.contentSize = CGSize(width: 320, height: 600)
     }
     
 
@@ -74,9 +81,9 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
-        var cell = collectionView.cellForItemAtIndexPath(indexPath) as! DashBoardCollectionViewCell
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! DashBoardCollectionViewCell
         
-        var check = false
+       
         
         
 //        if ((cell.selected) != nil)
@@ -84,11 +91,14 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
 //            print("This is selected ")
 //        }
         
-        
+        cell.routeAssistantImageView.highlighted  = true
         if(indexPath.item == 0)
         {
             //cell!.backgroundColor = UIColor.orangeColor()
             
+            cell.routeAssistantImageView.highlightedImage = UIImage(named: "Car-100 (1)")
+            
+            cell.routeAssistantImageView.highlighted  = true
             
             //cell.routeAssistantImageView.image = UIImage(named: "Car-100 (1)")
             entertainmentView.hidden = true
@@ -99,6 +109,7 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
         
         if(indexPath.item == 1)
         {
+             cell.routeAssistantImageView.highlightedImage = UIImage(named: "Airplane Mode On Filled-100 (1)")
             //cell.routeAssistantImageView.image = UIImage(named: "Airplane Mode On Filled-100 (1)")
             //cell!.backgroundColor = UIColor.orangeColor()
             entertainmentView.hidden = true
@@ -111,6 +122,7 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
         
         if(indexPath.item == 2)
         {
+             cell.routeAssistantImageView.highlightedImage = UIImage(named: "Pizza Filled-100")
             //cell.routeAssistantImageView.image = UIImage(named: "Pizza Filled-100")
             //cell!.backgroundColor = UIColor.orangeColor()
             entertainmentView.hidden = true
@@ -122,6 +134,7 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
         
         if(indexPath.item == 3)
         {
+             cell.routeAssistantImageView.highlightedImage = UIImage(named: "Park Concert Shell-96")
            // cell.routeAssistantImageView.image = UIImage(named: "Park Concert Shell-96")
             //cell!.backgroundColor = UIColor.orangeColor()
             entertainmentView.hidden = false
@@ -133,13 +146,14 @@ class RouteAssistantViewController: UIViewController,UICollectionViewDataSource,
         
     }
 
-    
-//    func collectionView(collectionView: UICollectionView,
-//                        layout collectionViewLayout: UICollectionViewLayout,
-//                               sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        let cellHeight = 100
-//        return CGSizeMake(collectionView.bounds.size.width/2, CGFloat(cellHeight))
-//    }
+        
+    func collectionView(collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let cellHeight = 80
+        //return CGSizeMake(collectionView.bounds.size.width/5, CGFloat(cellHeight))
+        return CGSizeMake(collectionView.bounds.size.width/4, collectionView.bounds.size.height)
+    }
     
     
     

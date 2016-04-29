@@ -14,6 +14,9 @@ class TPMSInstallationViewController: UIViewController {
     
     @IBAction func CHECKALLSENSOREBUTTONPRESSED(sender: AnyObject)
     {
+        
+        
+        
         let finishPoint = CGPointMake(600,  view.center.y)
         
         
@@ -24,6 +27,9 @@ class TPMSInstallationViewController: UIViewController {
                                     self.view1.transform = CGAffineTransformMakeRotation(1)
             }, completion: nil /*{
              */)
+        
+        
+        
 
     }
     
@@ -56,7 +62,9 @@ class TPMSInstallationViewController: UIViewController {
             }, completion: nil /*{
              */)
         
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("SWRevealViewController")
+        self.presentViewController(vc, animated: true, completion: nil)
 
     }
     

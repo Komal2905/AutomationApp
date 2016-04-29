@@ -142,4 +142,52 @@ extension UIView {
         
         
 }
+    
+}
+
+
+// underlying Text
+class UnderlinedLabel: UILabel {
+    
+    override var text: String! {
+        
+        didSet {
+            // swift < 2. : let textRange = NSMakeRange(0, count(text))
+            let textRange = NSMakeRange(0, text.characters.count)
+            let attributedText = NSMutableAttributedString(string: text)
+            attributedText.addAttribute(NSUnderlineStyleAttributeName , value:NSUnderlineStyle.StyleSingle.rawValue, range: textRange)
+            // Add other attributes if needed
+             
+            self.attributedText = attributedText
+        }
+    }
+}
+
+
+
+class UnderlineTextButton: UIButton {
+    
+    var attrs = [
+        NSFontAttributeName : UIFont.systemFontOfSize(19.0),
+        NSForegroundColorAttributeName : UIColor.redColor(),
+        NSUnderlineStyleAttributeName : 1]
+    
+    
+
+    
+    
+    override func setTitle(title: String?, forState state: UIControlState) {
+        super.setTitle(title, forState: .Normal)
+        self.setAttributedTitle(self.attributedString(), forState: .Normal)
+    }
+    
+    private func attributedString() -> NSAttributedString? {
+        let attributes = [
+            NSFontAttributeName : UIFont.systemFontOfSize(19.0),
+            NSForegroundColorAttributeName : UIColor.redColor(),
+            NSUnderlineStyleAttributeName : NSUnderlineStyle.StyleSingle.rawValue
+        ]
+        let attributedString = NSAttributedString(string: self.currentTitle!, attributes: attributes)
+        return attributedString
+    }
 }

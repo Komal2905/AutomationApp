@@ -2,50 +2,32 @@
 //  TESTViewController.swift
 //  AutomationApp
 //
-//  Created by ProjectHeena on 4/25/16.
+//  Created by ProjectHeena on 4/29/16.
 //  Copyright © 2016 ProjectHeena. All rights reserved.
 //
 
 import UIKit
 
-class TESTViewController: UIViewController,UIPopoverPresentationControllerDelegate {
+class TESTViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
+      // navigationController?.popViewControllerAnimated(true)
     }
 
+    @IBAction func push(sender: AnyObject) {
+        
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       // let vc = storyboard.instantiateViewControllerWithIdentifier("TestingMe")
+        //self.presentViewController(vc, animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func buttonpressed(sender: AnyObject)
-    {
-        
-        let startPoint = CGPointMake(1, 10)
-        let endPoint = CGPointMake(100, 200)
-        
-        
-        let context = UIGraphicsGetCurrentContext()
-        
-      
-        CGContextSetLineWidth(context, 2.0)
-        CGContextSetStrokeColorWithColor(context, UIColor.redColor().CGColor)
-        
-        CGContextMoveToPoint(context, 10, 200)
-        
-        CGContextAddLineToPoint(context,100, 200)
-        CGContextSetLineWidth(context, 1.2)
-        //CGContextSetStrokeColorWithColor(<#T##CGContext?#>, <#T##CGColor?#>)
-        CGContextStrokePath(context)
 
-    }
-
-    
-    
     /*
     // MARK: - Navigation
 

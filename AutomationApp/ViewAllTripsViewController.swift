@@ -12,16 +12,27 @@ import CoreGraphics
 class ViewAllTripsViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource ,UIPopoverPresentationControllerDelegate{
 
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var scrollView: UIScrollView!
     
 
     @IBOutlet weak var testImageView: UIImageView!
     
     
+    @IBOutlet weak var testImageView2: UIImageView!
+    
+    
     var cellNumberArray = ["12","454","400","58%"]
     var cellTextArray = ["Trip Anlyzed","immidiate ToDo","Hours of Driving","Overall Score"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+
 
        scrollView.contentSize = CGSize(width:315, height: 600)
         
@@ -30,7 +41,7 @@ class ViewAllTripsViewController: UIViewController,UICollectionViewDelegate,UICo
         
         testImageView.image = testImage
         
-
+        testImageView2.image = testImage
        
         
         }
